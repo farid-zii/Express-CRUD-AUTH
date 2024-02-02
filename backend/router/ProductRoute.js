@@ -7,10 +7,9 @@ import {
     saveProduct
 } from '../controllers/ProductController.js'
 
-
 const router = express.Router();
 
-router.get('/products', getProduct);
+router.get('/products',getProduct);
 router.get('/products/:id', getProductById);
 router.post('/products', saveProduct);
 router.patch('/products/:id', updateProduct);
